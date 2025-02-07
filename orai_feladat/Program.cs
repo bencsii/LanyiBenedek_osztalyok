@@ -35,6 +35,17 @@ namespace orai_feladat
 
 			Console.WriteLine("-------------------------------------------------------------------------------------------");
 
+			VideojatekKarakter karakter1 = new VideojatekKarakter("Pacman", 5, 50, 10);
+			VideojatekKarakter karakter2 = new VideojatekKarakter("caveira", 2, 1, 100);
+			Console.WriteLine(karakter1.ToString() + "\n" + karakter2.ToString());
+
+			
+			karakter1.Gyogyulas(50);
+			karakter2.Szintlepes();
+			Console.WriteLine(karakter1.ToString() + "\n" + karakter2.ToString());
+			Console.WriteLine(karakter2.Tamadas(500));
+
+
 		}
 	}
 }
