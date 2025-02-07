@@ -53,7 +53,7 @@ namespace orai_feladat
 
 		public int HanyOldal(int elolvasott)
 		{
-			return oldalszam = elolvasott;
+			return oldalszam - elolvasott;
 		}
 
 		public override string ToString()

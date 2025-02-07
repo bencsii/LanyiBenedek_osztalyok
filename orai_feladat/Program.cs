@@ -20,6 +20,21 @@ namespace orai_feladat
 			konyv1.Arnoveles(1000);
 
 			Console.WriteLine("\n" + konyv1.ToString() + "\n" + konyv1.HanyOldal(20));
+
+			Console.WriteLine("-------------------------------------------------------------------------------------------");
+
+			Film film1 = new Film("A Wall street farkasa","Leonardo DICABRIO",180,"Jo kerdes",true);
+			Film film2 = new Film("Utolso muszak","nem tudom",120,"Bunugyi",true);
+			Console.WriteLine(film1.ToString() + "\n" + film2.ToString());
+
+			film1.HosszNovelese(60);
+			film2.MufajModositasa("Romantikus");
+
+			Console.WriteLine(film1.ToString() + "\n" + film2.ToString());
+			Console.WriteLine(film2.Jatszas().ToString());
+
+			Console.WriteLine("-------------------------------------------------------------------------------------------");
+
 		}
 	}
 }
