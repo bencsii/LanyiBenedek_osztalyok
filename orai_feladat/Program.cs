@@ -45,7 +45,25 @@ namespace orai_feladat
 			Console.WriteLine(karakter1.ToString() + "\n" + karakter2.ToString());
 			Console.WriteLine(karakter2.Tamadas(500));
 
+            Console.WriteLine("-------------------------------------------------------------------------------------------");
 
-		}
+			Urhajo urhajo1 = new Urhajo("Nagyon urhajos nev",50,4,100);
+			Urhajo urhajo2 = new Urhajo("Csillagszelo5000",200,2,50);
+            Console.WriteLine(urhajo1.ToString() + "\n" + urhajo2.ToString());
+			urhajo1.indulas();
+			
+			Console.WriteLine(urhajo1);
+			Console.WriteLine($"Urhajo megtankolva jelenlegi uzemanyagszint: {urhajo2.tankolas(15)}");
+			Console.WriteLine(urhajo2);
+			urhajo1.landolas();
+			urhajo2.landolas();
+			Console.WriteLine(urhajo1);
+			Console.WriteLine(urhajo2);
+            Console.WriteLine("-------------------------------------------------------------------------------------------");
+
+
+
+
+        }
 	}
 }
