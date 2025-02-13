@@ -61,6 +61,22 @@ namespace orai_feladat
 			Console.WriteLine(urhajo2);
             Console.WriteLine("-------------------------------------------------------------------------------------------");
 
+			Kem kem1 = new Kem("Titkos Robert", "Sved orszag", 5, 1);
+			Kem kem2 = new Kem("Titkos Tamas", "Nemetorszag", 2, 4);
+            Console.WriteLine(kem1.ToString() + "\n" + kem2.ToString());
+
+			
+			Console.WriteLine(kem1.KuldetesInditasa());
+			Console.WriteLine(kem2.KuldetesInditasa());
+
+			kem1.VeszelySzintNovelese(2);
+			Console.WriteLine(kem1);
+
+
+
+			kem2.SikerEselyNovelese(10);
+			Console.WriteLine(kem2);
+
 
 
 
